@@ -13,17 +13,30 @@
         html {
             font-size: 16px;
         }
+
+        .first-page {
+            padding-top: 160px;
+        }
+
+        @media print {
+            .first-page {
+                padding-top: 0px;
+            }
+        }
     </style>
 </head>
 
 <body class="p-3">
 <!-- Page 1 -->
-<div class="break-after" style="padding-top: 160px">
+<div class="break-after first-page">
     <div>
         <div class="text-center">
             <img class="avatar rounded-circle mb-4" src="images/nvh/huyennv9c.png" />
 
-            <div class="text-danger-x font-weight-300 font-size-1.5 text-uppercase text-nowrap">
+            <div
+                class="font-weight-500 font-size-2.5 text-uppercase"
+                style="color: #fff; -webkit-text-fill-color: #fff; -webkit-text-stroke: 1px #000;"
+            >
                 Nguyen Van Huyen
             </div>
 
@@ -34,14 +47,14 @@
 
         <!-- Detail infomation -->
         <div class="mb-5 row mx-auto" style="max-width: 580px;">
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
                 <a class="text-decoration-none text-primary" href="mailto:lockex1987@gmail.com">
                     <i class="me-2 la la-envelope"></i>
                     lockex1987@gmail.com
                 </a>
             </div>
 
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
                 <a class="text-decoration-none text-primary" href="https://lockex1987.com/" target="_blank">
                     <!--i class="me-2 la la-home"></i-->
                     <svg
@@ -56,14 +69,21 @@
                 </a>
             </div>
 
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
                 <a class="text-decoration-none text-primary" href="https://github.com/lockex1987" target="_blank">
                     <i class="me-2 lab la-github"></i>
                     github.com/lockex1987
                 </a>
             </div>
 
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
+                <a class="text-decoration-none text-primary" href="https://t.me/lockex1987">
+                    <i class="me-2 la la-telegram"></i>
+                    t.me/lockex1987
+                </a>
+            </div>
+
+            <div class="py-2 col-sm-6">
                 <a class="text-decoration-none text-primary" href="https://viblo.asia/u/lockex1987" target="_blank">
                     <!--img src="images/programming/viblo.svg"
                     style="width: 1rem; height: 1rem;"
@@ -77,30 +97,28 @@
                 </a>
             </div>
 
-            <!-- Telegram https://t.me/lockex1987 -->
-
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
                 <a class="text-decoration-none text-primary" href="tel:0386519125">
                     <i class="me-2 la la-phone"></i>
                     038-651-9125
                 </a>
             </div>
 
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
                 <span class="text-primary">
                     <i class="me-2 la la-birthday-cake"></i>
                     1987
                 </span>
             </div>
 
-            <div class="py-2 col-md-6">
+            <div class="py-2 col-sm-6">
                 <span class="text-primary">
                     <i class="me-2 la la-map-marker"></i>
                     Hanoi, Vietnam
                 </span>
             </div>
 
-            <div class="py-2 col-md-6 d-none">
+            <div class="py-2 col-sm-6 d-none">
                 <a class="text-decoration-none text-primary" href="https://www.facebook.com/vanhuyen.nguyen.9638" target="_blank">
                     <i class="me-2 la la-facebook"></i>
                     vanhuyen.nguyen.9638
@@ -118,83 +136,89 @@
 
 
 <!-- Page 2: Timeline -->
-<div class="timeline position-relative break-after mb-3">
-    <div class="timeline-container">
-        <div class="timeline-content bg-white">
-            <div class="mb-3">
-                09/2005 - 07/2009
-            </div>
-
-            <div class="mb-3">
-                <img src="images/company/coltech.png" />
-            </div>
-
-            <div>
-                VNU University of Engineering and Technology
-            </div>
-        </div>
+<div class="break-after mb-3">
+    <div class="font-weight-500 text-center mb-4">
+        Timeline
     </div>
 
-    <div class="timeline-container">
-        <div class="timeline-content bg-white">
-            <div class="mb-3">
-                08/2009 - 03/2016
-            </div>
+    <div class="timeline position-relative">
+        <div class="timeline-container">
+            <div class="timeline-content bg-white">
+                <div class="mb-3">
+                    09/2005 - 07/2009
+                </div>
 
-            <div class="mb-3">
-                <img src="images/company/viettel.svg" />
-            </div>
+                <div class="mb-3">
+                    <img src="images/company/coltech.png" />
+                </div>
 
-            <div>
-                Viettel Software
+                <div>
+                    VNU University of Engineering and Technology
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="timeline-container">
-        <div class="timeline-content bg-white">
-            <div class="mb-3">
-                05/2016 - 07/2016
-            </div>
 
-            <div class="mb-3">
-                <img src="images/company/imip.png" />
-            </div>
+        <div class="timeline-container">
+            <div class="timeline-content bg-white">
+                <div class="mb-3">
+                    08/2009 - 03/2016
+                </div>
 
-            <div>
-                IMIP Technology And Solution Consultancy
+                <div class="mb-3">
+                    <img src="images/company/viettel.svg" />
+                </div>
+
+                <div>
+                    Viettel Software
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="timeline-container">
-        <div class="timeline-content bg-white">
-            <div class="mb-3">
-                08/2016 - 03/2017
-            </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-content bg-white">
+                <div class="mb-3">
+                    05/2016 - 07/2016
+                </div>
 
-            <div class="mb-3">
-                <img src="images/company/ifi solution.png" />
-            </div>
+                <div class="mb-3">
+                    <img src="images/company/imip.png" />
+                </div>
 
-            <div>
-                IFI Solutions
+                <div>
+                    IMIP Technology And Solution Consultancy
+                </div>
             </div>
         </div>
-    </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-content bg-white">
+                <div class="mb-3">
+                    08/2016 - 03/2017
+                </div>
 
-    <div class="timeline-container">
-        <div class="timeline-content bg-white">
-            <div class="mb-3">
-                04/2017 - present
+                <div class="mb-3">
+                    <img src="images/company/ifi solution.png" />
+                </div>
+
+                <div>
+                    IFI Solutions
+                </div>
             </div>
+        </div>
 
-            <div class="mb-3">
-                <img src="images/company/viettel-ai.svg" />
-            </div>
+        <div class="timeline-container">
+            <div class="timeline-content bg-white">
+                <div class="mb-3">
+                    04/2017 - present
+                </div>
 
-            <div>
-                Viettel AI
+                <div class="mb-3">
+                    <img src="images/company/viettel-ai.svg" />
+                </div>
+
+                <div>
+                    Viettel AI
+                </div>
             </div>
         </div>
     </div>
@@ -207,16 +231,16 @@
         <div class="font-weight-500 text-center mb-4">
             Technical skill set
         </div>
-        <p>I had oppotunities to works with different skills:\
-            Linux, Ubuntu, Oracle, MySQL, MariaDB, Postgres, MongoDB, Cassandra, ClickHouse, Redis,
-            Git, GitHub,
-            Nginx, Kafka, Docker,
-            Java, Scala, Groovy, Struts, Spring Boot,
-            PHP, Laravel, Node.js, Deno,
-            Angular, Vue, Bootstrap, Highcharts, Three.js, Leaflet,
-            Progressive Web App, WebSocket.
-            Tech stack that I prefer:
-        </p>
+        <p>I had oppotunities to works with different skills:</p>
+        <ul>
+            <li>Linux, Ubuntu, Oracle, MySQL, MariaDB, Postgres, MongoDB, Cassandra, ClickHouse, Redis</li>
+            <li>Git, GitHub, Nginx, Kafka, Docker, Progressive Web App, WebSocket</li>
+            <li>Java, Scala, Groovy, Struts, Spring Boot</li>
+            <li>PHP, Laravel, Node.js, Deno</li>
+            <li>Angular, Vue, Bootstrap, Highcharts, Three.js, Leaflet</li>
+        </ul>
+
+        <p>Tech stack that I prefer:</p>
 
         <div class="text-center mx-auto" style="max-width: 29rem">
             <img src="images/programming/vue.svg" class="tech-logo-1" />
@@ -277,7 +301,7 @@
             </div>
 
             <div class="mb-3">
-                Trang landing page, tin tức, sản phẩm
+                Common landing page, news, products
             </div>
 
             <div class="mb-3">
@@ -313,7 +337,7 @@
             </div>
 
             <div class="mb-3">
-                Đăng nhập tập trung
+                Single Sign-On
             </div>
 
             <div class="mb-3">
@@ -342,7 +366,7 @@
             </div>
 
             <div class="mb-3">
-                Các chức năng thường gặp
+                Common features which an application should have
             </div>
 
             <div class="mb-3">
@@ -371,7 +395,7 @@
             </div>
 
             <div class="mb-3">
-                Chat, truyền file
+                Chat, transfer file
             </div>
 
             <div class="mb-3">
@@ -403,7 +427,7 @@
 
             <div class="mb-2">
                 <a href="https://lockex1987.com/posts/webext%20-%20youtube%20subtitle%20downloader/" target="_blank">
-                    Tiện ích download subtitle từ YouTube
+                    YouTube subtitle downloader
                 </a>
             </div>
 
@@ -428,7 +452,7 @@
             </div>
 
             <div class="mb-3">
-                Listen to Vietnamese radio stations (VOV - Voice Of Vietnam).
+                Listen to Vietnamese radio stations (VOV - Voice Of Vietnam)
             </div>
 
             <div class="mb-3">
@@ -443,19 +467,19 @@
 
             <div class="mb-3">
                 <span class="badge bg-soft-primary text-primary font-weight-400">
-                    streaming
+                    Streaming
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
                     m3u8
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
-                    hls
+                    HLS
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
-                    aacp
+                    AACP
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
-                    visualization
+                    Visualization
                 </span>
             </div>
         </div>
@@ -470,7 +494,7 @@
             </div>
 
             <div class="mb-3">
-                Chuẩn hóa, đổi tên file hàng loạt. Nén và giải nén các file truyện tranh.
+                Mass rename, compress comics in cbz format
             </div>
 
             <div class="mb-3">
@@ -484,10 +508,10 @@
                     Bash
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
-                    PHP Phar
+                    GraalVM
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
-                    Deno
+                    native
                 </span>
             </div>
         </div>
@@ -504,7 +528,7 @@
             </div>
 
             <div class="mb-3">
-                Cây phả hệ
+                Genealogy
             </div>
 
             <div class="mb-3">
@@ -526,7 +550,7 @@
             </div>
 
             <div class="mb-3">
-                Tự tạo ebook
+                My ebook
             </div>
 
             <div class="mb-3">
@@ -546,12 +570,12 @@
 
             <div class="mb-3">
                 <a href="https://lockex1987.com/posts/project%20-%20lich%20cua%20toi/" target="_blank">
-                    Lịch của tôi
+                    My calendar
                 </a>
             </div>
 
             <div class="mb-3">
-                Âm lịch, thông báo ngày lễ / ngày sinh nhật.
+                Lunar calendar, notify holidays, birthdays
             </div>
 
             <div class="mb-3">
@@ -563,50 +587,6 @@
                 </span>
                 <span class="badge bg-soft-primary text-primary font-weight-400">
                     Push notification
-                </span>
-            </div>
-        </div>
-
-        <div class="avoid-break break-after">
-            <div class="mb-3">
-                <img class="img-fluid border" style="max-height: 500px" src="images/portfolio/batch_downloader.png" />
-            </div>
-
-            <div class="mb-3">
-                <a href="https://lockex1987.com/posts/webext%20-%20batch%20downloader/" target="_blank">
-                    Batch downloader
-                </a>
-            </div>
-
-            <div class="mb-3">
-                Tiện ích download file hàng loạt, php, curl
-            </div>
-
-            <div class="mb-3">
-                <span class="badge bg-soft-primary text-primary font-weight-400">
-                    Web extension
-                </span>
-            </div>
-        </div>
-
-        <div class="avoid-break break-after">
-            <div class="mb-3">
-                <img class="img-fluid border" style="max-height: 500px" src="images/portfolio/cloud_downloader.png" />
-            </div>
-
-            <div class="mb-3">
-                <a href="https://lockex1987.com/posts/webext%20-%20cloud%20downloader/" target="_blank">
-                    Cloud downloader
-                </a>
-            </div>
-
-            <div class="mb-3">
-                usercloud, zippyshare, fshare, mega, tự động điều chỉnh độ cao của textarea cho khớp với nội dung, auto grow, scrollHeight
-            </div>
-
-            <div class="mb-3">
-                <span class="badge bg-soft-primary text-primary font-weight-400">
-                    Web extension
                 </span>
             </div>
         </div>
