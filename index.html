@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My CV</title> <!-- HTML of CV to export into PDF -->
+    <title>My CV</title> <!-- HTML of CV to export into PDF, it - pdf doc format/node-demo/export_pdf.mjs -->
     <link rel="icon" href="images/logo.svg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500&amp;display=swap" />
@@ -20,6 +20,7 @@
 
         .portfolio-screenshot {
             width: 300px;
+            max-height: 300px;
         }
 
         @media print {
@@ -146,6 +147,7 @@
     </div>
 
     <div class="timeline position-relative">
+        <!-- TODO: Setup max-width in wide screen -->
         <div class="timeline-container">
             <div class="timeline-content bg-white">
                 <div class="mb-3">
@@ -230,7 +232,7 @@
 
 
 <!-- Page 3: Tech stack + Skills -->
-<div class="break-after">
+<div class="">
     <div class="skills mb-5">
         <div class="font-weight-500 text-center mb-4">
             Technical skill set
@@ -287,7 +289,7 @@
 
 
 <!-- Page 4: Porfolio gallery + selected blog posts with thumbnail images -->
-<div class="break-after">
+<div class="mt-5">
     <div class="font-weight-500 text-center mb-4">
         Portfolio
     </div>
